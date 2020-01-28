@@ -1,0 +1,5 @@
+rootProject.name = 'newsApp'
+include ':bmd-push-react-native'
+project(':bmd-push-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/bmd-push-react-native/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
